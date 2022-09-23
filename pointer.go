@@ -23,4 +23,13 @@ func main() {
 
 	fmt.Println(pointer1)
 	fmt.Println(pointer2)
+
+	a1 := 100
+	var pointer3 *int
+
+	pointer3 = &a1
+	*pointer3 = 999 // a := 999
+
+	fmt.Println(pointer3)
+	fmt.Println(a1)
 }
