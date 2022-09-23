@@ -32,4 +32,15 @@ func main() {
 
 	fmt.Println(pointer3)
 	fmt.Println(a1)
+
+	//pointer -> array
+
+	array := [3]int{1, 2, 3}
+
+	var pointerAr *[3]int
+
+	pointerAr = &array
+
+	fmt.Println(pointerAr)
+	fmt.Printf("%T", pointerAr)
 }
