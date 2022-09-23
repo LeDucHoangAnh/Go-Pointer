@@ -43,4 +43,14 @@ func main() {
 
 	fmt.Println(pointerAr)
 	fmt.Printf("%T", pointerAr)
+	fmt.Println()
+	//pointer -> func
+	c := 40
+	var pointerFunc *int = &c
+	appPointer(pointerFunc)
+	fmt.Println(c)
+}
+
+func appPointer(pointer *int) {
+	*pointer = 7778
 }
