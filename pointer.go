@@ -12,8 +12,15 @@ func main() {
 
 	fmt.Println()
 	b := 123
-	p2 := new(int)
+	p2 := new(int) // <=> var p2 *int
 	p2 = &b
 	fmt.Println(p2)
 	fmt.Printf("%T", p2)
+
+	//zero value
+	var pointer1 *int
+	pointer2 := new(int)
+
+	fmt.Println(pointer1)
+	fmt.Println(pointer2)
 }
